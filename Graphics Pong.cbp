@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Graphics Pong" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin\Release\GraphicsPong.exe" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\" />
+				<Option type="5" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add directory="..\..\SDL\include\SDL" />
+					<Add directory="..\..\SDL\SDL_mixer\include" />
+					<Add directory="..\..\SDL\SDL_ttf\include" />
+					<Add directory="..\..\SDL\SDL_draw\include" />
+					<Add directory="..\..\SDL\SDL_image\include" />
+					<Add directory="..\..\MinGW\lib" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lmingw32" />
+					<Add option="-lSDLmain" />
+					<Add option="-lSDL" />
+					<Add option="-mwindows" />
+					<Add library="..\..\SDL\lib\libSDL.dll.a" />
+					<Add library="..\..\SDL\lib\libSDLmain.a" />
+					<Add library="..\..\SDL\SDL_mixer\lib\SDL_mixer.lib" />
+					<Add library="..\..\SDL\SDL_ttf\lib\SDL_ttf.lib" />
+					<Add library="..\..\SDL\SDL_image\lib\SDL_image.lib" />
+					<Add directory="..\..\SDL\lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="ai.h" />
+		<Unit filename="ball.h" />
+		<Unit filename="demo.h" />
+		<Unit filename="game.h" />
+		<Unit filename="input.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="misc.h" />
+		<Unit filename="paddles.h" />
+		<Unit filename="screen_draw.h" />
+		<Unit filename="timer.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

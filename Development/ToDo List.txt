@@ -1,0 +1,22 @@
+-Improve hit detection.
+	-Modify paddle code to have a ball check much like how the ball code has a paddle check.  This will allow us to prevent the ball going through
+	the paddle when the paddle moves "into" the ball.  With this new code, the paddle will push the ball out of the way if it encounters it while
+	moving.  For now, just make the ball bounce at a standard angle like everything else, and make sure the direction is based on which end of the
+	paddle hits the ball.
+-Improve accel changes based on where the ball hits the paddle.
+	-If the ball is knocked out of the way by the paddle, increase speed by 1, opposite of what walls do.
+	-If the ball hits a corner of the paddle, use standard paddle acceleration.
+-Add in the ability for the ball to have independent X and Y velocities.
+-Add a video config menu.(Maybe?)
+-Remove all current music tracks and replace them with my own(and a nice music/sounds config menu).
+-Add paddle sizes.
+-Take another look at AI.
+-Add floating score notifier.
+-When a player misses the ball, their opponent gains more points the faster the ball was moving.
+-Add a controls config screen.
+-Reorganize settings stuff:  Options menu pops up list, this list leads to a config window for either Video, Audio, or Game Settings.
+-Cool animated background.
+-Make the balls beside menu options animated.
+-Fix the "volume controls count as input" issue.
+-Document the source code.
+-Add networked multiplayer.
