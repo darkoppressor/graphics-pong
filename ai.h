@@ -1,3 +1,6 @@
+/* Copyright (c) 2011 Kevin Wells */
+/* Graphics Pong may be freely redistributed.  See license for details. */
+
 #ifndef ai_h
 #define ai_h
 

@@ -1,3 +1,6 @@
+/* Copyright (c) 2011 Kevin Wells */
+/* Graphics Pong may be freely redistributed.  See license for details. */
+
 #ifndef game_h
 #define game_h
 
